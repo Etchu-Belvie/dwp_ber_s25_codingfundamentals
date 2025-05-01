@@ -1,6 +1,7 @@
-# Shopping List
+# Shopping List 
 print("\n# Shopping List")
-shopping_list = []
+
+shopping_items = []
 
 shopping = True
 
@@ -10,9 +11,12 @@ while shopping:
          break
     shopping_items.append(shopping_item)
 singled_items  = set(shopping_items)
-print(singled_items)
+
 shopping_items.sort()
+
 num = 0
+print("Shopping List:")
+
 for item in singled_items:
     num +=1
     print(f"{num}.{item}")
