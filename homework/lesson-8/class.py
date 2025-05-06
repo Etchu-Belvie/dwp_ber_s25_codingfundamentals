@@ -80,7 +80,7 @@ dictionaries with both information ( myList = [ my_dict, my_friend_dict_1 ,
 my_friend_dict_2] . Calculate the average of all your ages.'''
 
 my_friend_dict_1 = {"name":"friend1", "age":35, "occupation":"Lawyer"}
-my_friend_dict_2 = {"name":"friend2", "age":37, "occupation":"Software Engineer"}
+my_friend_dict_2 = {"name":"friend2", "age": 27, "occupation":"Software Engineer"}
 
 my_dictionaries = [my_dictionary,my_friend_dict_1,my_friend_dict_2]
 
