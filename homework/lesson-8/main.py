@@ -63,6 +63,32 @@ for key,value in sorted(european_cities_info.items()):
 # Exercise 9:Remove "Madrid" from european_cities_info
 print("\n# Exercise 9:Remove 'Madrid' from european_cities_info")
 
-european_cities_info.pop("Madrid")
+(european_cities_info.pop("Madrid"))
 for key,value in sorted(european_cities_info.items()):
-    print(key, "-->", value)
+  print(key, "-->", value)
+
+
+# Exercise 10:Check to see if Amsterdam is in european_cities_info and print whether it is there or not
+print("\n# Exercise 10:Check to see if Amsterdam is in european_cities_info and print whether it is there or not")
+
+if "Amsterdam" in european_cities_info:
+    print(european_cities_info.get("Amsterdam"))
+else:
+    print("Amsterdam:Not Found")
+
+#print(european_cities_info)   
+
+
+# Bonus Exercise
+print("\n# Bonus Exercise")
+'''Bonus: Create a dictionary from two lists:
+Use the functions dict() and zip()'''
+
+dishes = ["Pizza", "Sauerkraut", "Paella", "Hamburger"]
+
+countries = ["Italy", "Germany", "Spain", "USA"]
+
+dishes_countries_dict = dict(zip(dishes,countries))
+print(dishes_countries_dict)
+
+
