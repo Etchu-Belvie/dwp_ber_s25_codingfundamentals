@@ -1,4 +1,4 @@
-'''# Data Structure:Dictionaries
+# Data Structure:Dictionaries
 print("\n# Dta Structure:Dictionaries")
 # Exercise 1
 print("\n# Exercise 1")
@@ -45,7 +45,7 @@ print("Favorite colour" in personal_info)
 print("#11:appending a hobby")
 
 personal_info["hobby"].append("cleaning")
-print(personal_info.values())'''
+print(personal_info.values())
 
 
 # Exercise 2: Looping over Dictionaries
