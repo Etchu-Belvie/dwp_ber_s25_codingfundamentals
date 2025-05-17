@@ -146,10 +146,10 @@ import random
 #      |    |
 #      ------
 
-def draw_single_wagon():
+'''def draw_single_wagon():
     print("  ----")
     print(" |    |")
-    print(" ------")
+    print(" ------")'''
 
 
 # Exercise 2
