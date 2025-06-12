@@ -48,7 +48,7 @@ def give_feedback(guess, solution):
 def is_valid_guess(word):
     return len(word) == 5 and word.isalpha()
 
-print("🎮 Welcome to Wordle in Python!\n")
+print("🎮 Welcom e to Wordle in Python!\n")
 attempt = 1
 max_attempts = 6
 
