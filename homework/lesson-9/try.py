@@ -1,3 +1,5 @@
+
+
 import random
 from colorama import init, Fore, Back, Style
 
@@ -5,13 +7,25 @@ from colorama import init, Fore, Back, Style
 init(autoreset=True)
 
 # List of 5-letter words
-word_list = ['spain', 'japan', 'sudan', 'niger', 'malta', 'egypt']
+word_list = ['spain', 'japan', 'sudan', 'niger', 'malta', 'egypt','apple', 'grape', 'mango', 'pearl', 'stone', 'climb',
+    'brave', 'flame', 'drink', 'fresh', 'video', 'wheel',
+    'plane', 'fruit', 'lemon', 'poise', 'actor', 'earth',
+    'house', 'field','green', 'travel']
+
+print("Welcome to Wordle! Guess the 5-letter word")
+print("You get 6 attempts!")
+print("Hint!")
+word = "APPLE"
+colored_word = (Back.GREEN + Fore.BLACK + f" {word[0]} " + Back.LIGHTBLACK_EX + Fore.WHITE + f" {word[1]} " + Back.YELLOW + Fore.BLACK + f" {word[2]}" + Back.LIGHTBLACK_EX+ Fore.WHITE + f" {word[3]}" + Back.LIGHTBLACK_EX+ Fore.WHITE + f" {word[4]} ")
+print(colored_word)
+print("🟩 Right letter Right Position")
+print("🟨 Right letter Wrong Position")
+print("⬜ wrong letter")
+print("Ready? Let's Play!")
 
 def play_wordle():
     wordle = random.choice(word_list)
     max_attempts = 6
-
-    print("Welcome to Wordle! Guess the 5-letter word.\n")
 
     for attempt in range(max_attempts):
         while True:
@@ -44,6 +58,3 @@ def play_wordle():
 
 # Start the game
 play_wordle()
-        
-
-
